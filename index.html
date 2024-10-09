@@ -1,95 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="stylesheet" href="/css/index.css">
-</head>
-<body>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      header h1 {
+        margin: 20px 0;
+      }
+
+      header p {
+        margin: 20px 0;
+        font-size: 1.2em;
+      }
+
+      .testimonial {
+        background-color: #fff;
+        padding: 20px;
+        margin: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .testimonial.active {
+        display: block;
+      }
+
+      .slider {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .content {
+        padding-bottom: 100px;
+      }
+
+      button {
+        display: inline-block;
+        background-color: #008cba;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+      section {
+        padding: 20px;
+        margin-bottom: 10px;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
     <header>
-        <h1>Impulsa tu empresa con talento joven: Beneficios por contratar a recién egresados</h1>
-        <p>Accede a incentivos fiscales, subsidios salariales y programas de capacitación al contratar a recién graduados.</p>
-        <button>Regístrate ahora</button>
+      <h1>
+        Impulsa tu empresa con talento joven: Beneficios por contratar a recién
+        egresados
+      </h1>
+      <p>
+        Accede a incentivos fiscales, subsidios salariales y programas de
+        capacitación al contratar a recién graduados.
+      </p>
+      <button>Regístrate ahora</button>
     </header>
-    <div class="content"> 
+    <div class="content">
+      <section id="program-description">
+        <h2>Descripción del programa</h2>
+        <p>
+          El programa de Impulsa tu empresa con talento joven es una iniciativa
+          que busca incentivar a las empresas a contratar a recién egresados de
+          instituciones educativas. Al contratar a recién graduados, las
+          empresas pueden acceder a incentivos fiscales, subsidios salariales y
+          programas de capacitación.
+        </p>
+      </section>
 
-        <section id="program-description">
-            <h2>Descripción del programa</h2>
-            <p>El programa de Impulsa tu empresa con talento joven es una iniciativa que busca incentivar a las empresas a contratar a recién egresados de instituciones educativas. Al contratar a recién graduados, las empresas pueden acceder a incentivos fiscales, subsidios salariales y programas de capacitación.</p>
-    
-        </section>
+      <section id="benefits">
+        <h2>Beneficios</h2>
+        <ul>
+          <li>Incentivos fiscales</li>
+          <li>Subsidios salariales</li>
+          <li>Programas de capacitación</li>
+        </ul>
+      </section>
 
-        <section id="benefits">
-            <h2>Beneficios</h2>
-            <ul>
-                <li>Incentivos fiscales</li>
-                <li>Subsidios salariales</li>
-                <li>Programas de capacitación</li>
-            </ul>
-        </section>
-    
-        <section id="participation-process">
-            <h2>Proceso de participación</h2>
-            <ol>
-                <li>Regístrate en el programa</li>
-                <li>Publica tu oferta de empleo</li>
-                <li>Selecciona a los candidatos</li>
-                <li>Contrata a los recién egresados</li>
-            </ol>
-        </section>
-    
-        <section id="testimonials">
-            <h2>Testimonios</h2>
+      <section id="participation-process">
+        <h2>Proceso de participación</h2>
+        <ol>
+          <li>Regístrate en el programa</li>
+          <li>Publica tu oferta de empleo</li>
+          <li>Selecciona a los candidatos</li>
+          <li>Contrata a los recién egresados</li>
+        </ol>
+      </section>
 
-            
-            <div class="testimonial">
-                <p>“Gracias a Impulsa tu empresa con talento joven, pudimos contratar a un recién egresado que ha demostrado ser un gran activo para nuestra empresa.”</p>
-                <p>- Juan Pérez, CEO de Empresa S.A.</p>
-            </div>
-            <div class="testimonial">
-                <p>“Impulsa tu empresa con talento joven nos ha permitido acceder a incentivos fiscales y subsidios salariales que han sido de gran ayuda para nuestra empresa.”</p>
-                <p>- María Gómez, Directora de Recursos Humanos de Empresa S.A.</p>
-            </div>
-        </section>
-    
-        <section id="contact-info">
-            <h2>Información de contacto</h2>
-            <p>Para más información, contáctanos al teléfono 123-456-7890 o envíanos un correo a </p>
-    
-        </section>
-    
-        <section id="cta">
-            <h2>Regístrate ahora</h2>
-            <button>Regístrate</button>
-        </section>
-    
-        <section id="faqs">
-            <h2>Preguntas frecuentes</h2>
-            <div class="faq">
-                <h3>¿Cuáles son los requisitos para participar en el programa?</h3>
-                <p>Para participar en el programa, las empresas deben estar registradas en el SAT y contar con un RFC activo. Además, deben tener al menos un año de operación y no haber recibido ningún tipo de apoyo gubernamental en los últimos 12 meses.</p>
-            </div>
-            <div class="faq">
-                <h3>¿Cuánto tiempo dura el programa?</h3>
-                <p>El programa de Impulsa tu empresa con talento joven tiene una duración de 12 meses, durante los cuales las empresas pueden acceder a los beneficios del programa.</p>
-            </div>
-            <div class="faq">
-                <h3>¿Cuántos recién egresados puedo contratar?</h3>
-                <p>Las empresas pueden contratar hasta un máximo de 5 recién egresados por año, siempre y cuando cumplan con los requisitos del programa.</p>
-            </div>
-        </section>
+      <section id="testimonials">
+        <h2>Testimonios</h2>
 
+        <div class="testimonial">
+          <p>
+            “Gracias a Impulsa tu empresa con talento joven, pudimos contratar a
+            un recién egresado que ha demostrado ser un gran activo para nuestra
+            empresa.”
+          </p>
+          <p>- Juan Pérez, CEO de Empresa S.A.</p>
+        </div>
+        <div class="testimonial">
+          <p>
+            “Impulsa tu empresa con talento joven nos ha permitido acceder a
+            incentivos fiscales y subsidios salariales que han sido de gran
+            ayuda para nuestra empresa.”
+          </p>
+          <p>- María Gómez, Directora de Recursos Humanos de Empresa S.A.</p>
+        </div>
+      </section>
+
+      <section id="contact-info">
+        <h2>Información de contacto</h2>
+        <p>
+          Para más información, contáctanos al teléfono 123-456-7890 o envíanos
+          un correo a
+        </p>
+      </section>
+
+      <section id="cta">
+        <h2>Regístrate ahora</h2>
+        <button>Regístrate</button>
+      </section>
+
+      <section id="faqs">
+        <h2>Preguntas frecuentes</h2>
+        <div class="faq">
+          <h3>¿Cuáles son los requisitos para participar en el programa?</h3>
+          <p>
+            Para participar en el programa, las empresas deben estar registradas
+            en el SAT y contar con un RFC activo. Además, deben tener al menos
+            un año de operación y no haber recibido ningún tipo de apoyo
+            gubernamental en los últimos 12 meses.
+          </p>
+        </div>
+        <div class="faq">
+          <h3>¿Cuánto tiempo dura el programa?</h3>
+          <p>
+            El programa de Impulsa tu empresa con talento joven tiene una
+            duración de 12 meses, durante los cuales las empresas pueden acceder
+            a los beneficios del programa.
+          </p>
+        </div>
+        <div class="faq">
+          <h3>¿Cuántos recién egresados puedo contratar?</h3>
+          <p>
+            Las empresas pueden contratar hasta un máximo de 5 recién egresados
+            por año, siempre y cuando cumplan con los requisitos del programa.
+          </p>
+        </div>
+      </section>
     </div>
 
-    
-
     <footer>
-        <p>© 2021 Impulsa tu empresa con talento joven. Todos los derechos reservados.</p>
+      <p>
+        © 2021 Impulsa tu empresa con talento joven. Todos los derechos
+        reservados.
+      </p>
     </footer>
 
-
     <script src="/js/indes.js"></script>
-</body>
+  </body>
 </html>

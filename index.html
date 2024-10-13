@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+
+    
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -22,8 +25,22 @@
       }
 
       header h1 {
+        font-size: 4em;
         margin: 20px 0;
       }
+
+
+      h2 {
+        font-size: 2em;
+        margin: 20px 0;
+      }
+
+      img {
+        width: 80%;
+        margin: 20px 0;
+      }
+
+
 
       header p {
         margin: 20px 0;
@@ -75,33 +92,72 @@
         padding: 20px;
         margin-bottom: 10px;
       }
+      
+        .card {
+            border: 1px solid #ccc;
+            padding: 16px;
+            margin: 16px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 0 10px;
+        }
 
-      footer {
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        padding: 10px 0;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-      }
-    </style>
+        .cards {
+            display: flex;
+            flex-direction: row;
+    
+        }   
+        #contact-info ul {
+        list-style: none;
+        padding: 0;
+        }
+
+        #contact-info ul li {
+        margin: 10px 0;
+        }
+
+        #contact-info ul li i {
+        margin-right: 8px;
+        color: #333;
+        }
+
+        #contact-info ul li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+        }
+
+        #contact-info ul li a:hover {
+        color: #007BFF;
+        }
+        
+
+
+</style>
+
   </head>
   <body>
     <header>
       <h1>
-        Impulsa tu empresa con talento joven: Beneficios por contratar a recién
-        egresados
+        Impulsa tu empresa con talento joven
       </h1>
+      <h2>
+        Beneficios por contratar a recién
+        egresados
+      </h2>
+
+      <img src="https://globalfgu.com/wp-content/uploads/2023/09/1-7-1170x752.png" alt="Logo" />
+
+
       <p>
         Accede a incentivos fiscales, subsidios salariales y programas de
         capacitación al contratar a recién graduados.
       </p>
-      <button>Regístrate ahora</button>
+      <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdp_vLAvx3EqgebLt4cfzCfmTm4iAZ8c-VxfzgLjMS881GgrQ/viewform?pli=1', '_blank')">Regístrate</button>
     </header>
     <div class="content">
       <section id="program-description">
-        <h2>Descripción del programa</h2>
+        <h2>¿Cómo funciona?</h2>
         <p>
           El programa de Impulsa tu empresa con talento joven es una iniciativa
           que busca incentivar a las empresas a contratar a recién egresados de
@@ -113,11 +169,32 @@
 
       <section id="benefits">
         <h2>Beneficios</h2>
-        <ul>
-          <li>Incentivos fiscales</li>
-          <li>Subsidios salariales</li>
-          <li>Programas de capacitación</li>
-        </ul>
+        <div class="cards">
+            <div class="card">
+                <h3>Incentivos fiscales</h3>
+                <p>
+                  Las empresas que contraten a recién egresados pueden acceder a
+                  incentivos fiscales que les permiten deducir impuestos y reducir su
+                  carga fiscal.
+                </p>
+              </div>
+              <div class="card">
+                <h3>Subsidios salariales</h3>
+                <p>
+                  Las empresas pueden acceder a subsidios salariales que les permiten
+                  reducir los costos laborales al contratar a recién egresados.
+                </p>
+              </div>
+              <div class="card">
+                <h3>Programas de capacitación</h3>
+                <p>
+                  Las empresas pueden acceder a programas de capacitación para los
+                  recién egresados, lo que les permite mejorar sus habilidades y
+                  competencias.
+                </p>
+              </div>
+        </div>
+        
       </section>
 
       <section id="participation-process">
@@ -154,14 +231,30 @@
       <section id="contact-info">
         <h2>Información de contacto</h2>
         <p>
-          Para más información, contáctanos al teléfono 123-456-7890 o envíanos
-          un correo a
+          Para obtener más información sobre el programa de Impulsa tu empresa
+          con talento joven, puedes contactarnos a través de los siguientes
+          medios:
+
+            <ul>
+                <li>Teléfono: 123-456-7890</li>
+                <li>Correo electrónico: empresauvmtarea@empresa.com</li>
+
+            </ul>
+
+            Redes sociales
+
+            <ul>
+                <li><i class="fab fa-facebook"></i> <a href="https://facebook.com/empresa" target="_blank">Facebook: @empresa</a></li>
+      <li><i class="fab fa-twitter"></i> <a href="https://twitter.com/empresa" target="_blank">Twitter: @empresa</a></li>
+      <li><i class="fab fa-instagram"></i> <a href="https://instagram.com/empresa" target="_blank">Instagram: @empresa</a></li>
+            </ul>
         </p>
+                    
       </section>
 
       <section id="cta">
         <h2>Regístrate ahora</h2>
-        <button>Regístrate</button>
+        <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdp_vLAvx3EqgebLt4cfzCfmTm4iAZ8c-VxfzgLjMS881GgrQ/viewform?pli=1', '_blank')">Regístrate</button>
       </section>
 
       <section id="faqs">

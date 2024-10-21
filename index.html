@@ -17,11 +17,27 @@
       }
 
       header {
-        background-color: #333;
+        background-color: #1C1B20;
         color: #fff;
         padding: 20px 0;
         text-align: center;
         margin-bottom: 20px;
+      }
+
+      #header_1 {
+        display: block;
+      }
+
+      #header_2 {
+        display: none;
+      }
+
+      #c1 {
+        display: block;
+      }
+
+      #c2 {
+        display: none;
       }
 
       header h1 {
@@ -40,6 +56,47 @@
         margin: 20px 0;
       }
 
+      .participar_cards{
+        display: flex;
+        flex-direction: row;
+
+      }
+
+
+      .participar_cards h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 2em;
+        margin: 20px 0;
+      }
+
+      .participar_cards p {
+        width: 100%;
+        text-align: center;
+      }
+
+      .benefits_cards .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+
+      .benefits_cards .card h3{
+        text-align: center;
+        font-size: 1.5em;
+        margin: 20px 0;
+      }
+
+      .benefits_cards .card p{
+        text-align: center;
+       
+      }
+      .benefits_cards .card img  {
+        width: 80px;
+        margin: 20px 0;
+      }
 
 
       header p {
@@ -76,9 +133,23 @@
         width: 80%;
       }
 
+      
+      .content_2 {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 100px;
+        width: 80%;
+      }
+      .centra_boton{
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;
+      }
+
       button {
         display: inline-block;
-        background-color: #008cba;
+        background-color: #FF5851;
         color: white;
         padding: 15px 32px;
         text-align: center;
@@ -131,14 +202,60 @@
         #contact-info ul li a:hover {
         color: #007BFF;
         }
+
+        .slideshow-container {
+          max-width: 720px;
+          position: relative;
+          margin: auto;
+        }
+
+        .mySlides {
+          display: none;
+        }
         
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          margin-top: -22px;
+          padding: 16px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+
+        .fade {
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+          from {opacity: .4}
+          to {opacity: 1}
+        }
 
 
 </style>
 
   </head>
   <body>
-    <header>
+
+    <header id="header_1">
       <h1>
         Impulsa tu empresa con talento joven
       </h1>
@@ -147,31 +264,55 @@
         egresados
       </h2>
 
-      <img src="https://globalfgu.com/wp-content/uploads/2023/09/1-7-1170x752.png" alt="Logo" />
-
-
       <p>
         Accede a incentivos fiscales, subsidios salariales y programas de
         capacitación al contratar a recién graduados.
       </p>
-      <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdp_vLAvx3EqgebLt4cfzCfmTm4iAZ8c-VxfzgLjMS881GgrQ/viewform?pli=1', '_blank')">Regístrate</button>
+      <button id="contenido2" onclick="cambiarContenido()">Descubre Más</button>
     </header>
-    <div class="content">
-      <section id="program-description">
-        <h2>¿Cómo funciona?</h2>
-        <p>
-          El programa de Impulsa tu empresa con talento joven es una iniciativa
-          que busca incentivar a las empresas a contratar a recién egresados de
-          instituciones educativas. Al contratar a recién graduados, las
-          empresas pueden acceder a incentivos fiscales, subsidios salariales y
-          programas de capacitación.
-        </p>
+
+    <header id="header_2">
+      <h1>
+        ¿No sabes cómo empezar?
+      </h1>
+
+      <p>
+        Descarga nuestras plantillas de CV como empresa o recién egresado
+      </p>
+      <button onclick="">Descargar</button>
+    </header>
+   
+
+    <div id="c1" class="content">
+
+      <section id="image_slider">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="https://factorial.mx/wp-content/uploads/2024/01/10171232/Frame-34789-13.png" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+            <img src="https://img.freepik.com/free-photo/medium-shot-smiley-colleagues-job_23-2149308453.jpg?t=st=1729475578~exp=1729479178~hmac=d791bea108a170460cd9f650fcf915e913082cf579f8a4d40a7c813129fed4cb&w=996" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+            <img src="https://img.freepik.com/free-photo/front-view-colleague-work-looking-laptop_23-2148327004.jpg?t=st=1729475620~exp=1729479220~hmac=de687a1808a7343045f34323fd8219f446d7602144285db39255d179f80c98f3&w=996" style="width:100%">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+         
+        </div>
+
       </section>
 
+
+      
       <section id="benefits">
         <h2>Beneficios</h2>
-        <div class="cards">
+        <div class="benefits_cards cards">
             <div class="card">
+
+                <img src="https://img.freepik.com/premium-vector/scales-money-finance-icon-outline-vector-credit-increase-invoice-business_98396-68120.jpg?w=740" alt="">
                 <h3>Incentivos fiscales</h3>
                 <p>
                   Las empresas que contraten a recién egresados pueden acceder a
@@ -180,6 +321,7 @@
                 </p>
               </div>
               <div class="card">
+                <img src="https://img.freepik.com/premium-vector/human-resources-minimalist-line-art-icon-logo-symbol_925376-262258.jpg?w=740" alt="">
                 <h3>Subsidios salariales</h3>
                 <p>
                   Las empresas pueden acceder a subsidios salariales que les permiten
@@ -187,6 +329,8 @@
                 </p>
               </div>
               <div class="card">
+                <img src="https://img.freepik.com/vector-premium/vector-icono-plano-linea-elemento-islamico-al-qur-an_431668-1127.jpg?w=740" alt="">
+
                 <h3>Programas de capacitación</h3>
                 <p>
                   Las empresas pueden acceder a programas de capacitación para los
@@ -198,80 +342,30 @@
         
       </section>
 
-      <section id="participation-process">
-        <h2>Proceso de participación</h2>
-        <ol>
-          <li>Regístrate en el programa</li>
-          <li>Publica tu oferta de empleo</li>
-          <li>Selecciona a los candidatos</li>
-          <li>Contrata a los recién egresados</li>
-        </ol>
-      </section>
-
-      <section id="mission-vision" class="cards">
-        <div class="card">
-          <h3>Misión</h3>
-          <p>
-            Empoderar a las empresas para que identifiquen y aprovechen el talento joven, facilitando oportunidades laborales a recién egresados a través de una plataforma dinámica que conecta sus habilidades con las necesidades del mercado. Nuestro propósito es cerrar la brecha de experiencia laboral, permitiendo que tanto jóvenes profesionales como empresas crezcan de manera conjunta y sostenible.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Visión</h3>
-          <p>
-            Convertirnos en la plataforma líder en el impulso del talento joven, generando un impacto positivo en el mercado laboral global. Queremos ser el puente entre las empresas y los futuros líderes, creando un entorno en el que la falta de experiencia deje de ser una barrera y se valore el potencial, la innovación y la pasión de los nuevos profesionistas.
-          </p>
-        </div>
-      </section>
-
       <section id="testimonials">
         <h2>Testimonios</h2>
-
-        <div class="testimonial">
-          <p>
-            “Gracias a Impulsa tu empresa con talento joven, pudimos contratar a
-            un recién egresado que ha demostrado ser un gran activo para nuestra
-            empresa.”
-          </p>
-          <p>- Juan Pérez, CEO de Empresa S.A.</p>
+        <div class="cards">
+          <div class=" card">
+            <p>
+              “Gracias a Impulsa tu empresa con talento joven, pudimos contratar a
+              un recién egresado que ha demostrado ser un gran activo para nuestra
+              empresa.”
+            </p>
+            <p>- Juan Pérez, CEO de Empresa S.A.</p>
+          </div>
+          <div class="card">
+            <p>
+              “Impulsa tu empresa con talento joven nos ha permitido acceder a
+              incentivos fiscales y subsidios salariales que han sido de gran
+              ayuda para nuestra empresa.”
+            </p>
+            <p>- María Gómez, Directora de Recursos Humanos de Empresa S.A.</p>
+          </div>
         </div>
-        <div class="testimonial">
-          <p>
-            “Impulsa tu empresa con talento joven nos ha permitido acceder a
-            incentivos fiscales y subsidios salariales que han sido de gran
-            ayuda para nuestra empresa.”
-          </p>
-          <p>- María Gómez, Directora de Recursos Humanos de Empresa S.A.</p>
-        </div>
+        
       </section>
 
-      <section id="contact-info">
-        <h2>Información de contacto</h2>
-        <p>
-          Para obtener más información sobre el programa de Impulsa tu empresa
-          con talento joven, puedes contactarnos a través de los siguientes
-          medios:
-
-            <ul>
-                <li>Teléfono: 123-456-7890</li>
-                <li>Correo electrónico: empresauvmtarea@empresa.com</li>
-
-            </ul>
-
-            Redes sociales
-
-            <ul>
-                <li><i class="fab fa-facebook"></i> <a href="https://facebook.com/empresa" target="_blank">Facebook: @empresa</a></li>
-      <li><i class="fab fa-twitter"></i> <a href="https://twitter.com/empresa" target="_blank">Twitter: @empresa</a></li>
-      <li><i class="fab fa-instagram"></i> <a href="https://instagram.com/empresa" target="_blank">Instagram: @empresa</a></li>
-            </ul>
-        </p>
-                    
-      </section>
-
-      <section id="cta">
-        <h2>Regístrate ahora</h2>
-        <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdp_vLAvx3EqgebLt4cfzCfmTm4iAZ8c-VxfzgLjMS881GgrQ/viewform?pli=1', '_blank')">Regístrate</button>
-      </section>
+      
 
       <section id="faqs">
         <h2>Preguntas frecuentes</h2>
@@ -300,6 +394,101 @@
           </p>
         </div>
       </section>
+
+      <section id="contact-info">
+        <h2>Información de contacto</h2>
+        <p>
+          Para obtener más información sobre el programa de Impulsa tu empresa
+          con talento joven, puedes contactarnos a través de los siguientes
+          medios:
+
+            <ul>
+                <li>Teléfono: 123-456-7890</li>
+                <li>Correo electrónico: empresauvmtarea@empresa.com</li>
+
+            </ul>
+
+            Redes sociales
+
+            <ul>
+              <li><i class="fab fa-facebook"></i> <a href="https://facebook.com/empresa" target="_blank">Facebook: @empresa</a></li>
+              <li><i class="fab fa-twitter"></i> <a href="https://twitter.com/empresa" target="_blank">Twitter: @empresa</a></li>
+              <li><i class="fab fa-instagram"></i> <a href="https://instagram.com/empresa" target="_blank">Instagram: @empresa</a></li>
+            </ul>
+        </p>
+                    
+      </section>
+
+
+    </div>
+
+    <div id="c2" class="content">
+
+      <section id="vacantes_disponibles">
+        <h2>Descubre las vacantes disponibles</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Desarrollador web</h3>
+                <p>
+                  Empresa S.A. está buscando un desarrollador web para unirse a su
+                  equipo. Requisitos: conocimientos de HTML, CSS y JavaScript.
+                </p>
+              </div>
+              <div class="card">
+                <h3>Analista de datos</h3>
+                <p>
+                  Empresa S.A. está buscando un analista de datos para unirse a su
+                  equipo. Requisitos: conocimientos de SQL y Excel.
+                </p>
+              </div>
+              <div class="card">
+                <h3>Community manager</h3>
+                <p>
+                  Empresa S.A. está buscando un community manager para unirse a su
+                  equipo. Requisitos: conocimientos de redes sociales y marketing
+                  digital.
+                </p>
+              </div>
+
+        </div>
+        <div class="centra_boton">
+          <button>Ver Más</button>
+        </div>
+        
+      </section>
+
+      <section id="program-description">
+        <h2>¿Cómo participar?</h2>
+
+        <div class="participar_cards">
+          <div class="card">
+            <h2>1</h2>
+            <p>
+              Regístrate en el programa
+            </p>
+          </div>
+          <div class="card">
+            <h2>2</h2>
+            <p>
+              Publica tu oferta de empleo
+            </p>
+          </div>
+          <div class="card">
+            <h2>3</h2>
+            <p>
+              Selecciona a los candidatos
+            </p>
+          </div>
+          <div class="card">
+            <h2>4
+            </h2>
+            <p>
+              Contrata a los recién egresados
+            </p>
+          </div>
+        </div>
+        
+      </section>
     </div>
 
     <footer>
@@ -309,6 +498,37 @@
       </p>
     </footer>
 
-    <script src="/js/indes.js"></script>
+    <script>
+
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex-1].style.display = "block";
+    
+    }
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    
+    function cambiarContenido() {
+      document.getElementById('header_1').style.display = 'none';
+      document.getElementById('header_2').style.display = 'block';
+      document.getElementById('c1').style.display = 'none';
+      document.getElementById('c2').style.display = 'block';
+     
+
+    }
+    </script>
   </body>
 </html>

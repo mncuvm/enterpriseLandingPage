@@ -249,6 +249,47 @@
           to {opacity: 1}
         }
 
+        .centra_boton {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  #subscribe, #pricing {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+
+  #subscribe h2, #pricing h2 {
+    text-align: center;
+  }
+
+  .pricing-cards {
+    display: flex;
+  }
+
+  .pricing-cards .card {
+    
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .pricing-cards .card h3 {
+    margin-top: 0;
+  }
+
+  .pricing-cards .card p {
+    margin: 10px 0;
+  }
+
 
 </style>
 
@@ -365,6 +406,53 @@
         
       </section>
 
+   
+
+      
+      <section id="pricing">
+        <h2>¡Suscríbete!</h2>
+
+        <div class="pricing-cards">
+          <div class="card">
+            <h3>Free Plan</h3>
+            <ul>
+              <li>Acceso limitado a recursos y webinars.</li>
+            </ul>
+            <p>Precio: Gratis</p>
+          </div>
+          <div class="card">
+            <h3>Plan Mensual</h3>
+            <ul>
+              <li>Acceso completo a todos los recursos y webinars.</li>
+              <li>Acceso a 2 diplomados.</li>
+              <li>Acceso a 3 chats con RH.</li>
+            </ul>
+            <p>Precio: $10/mes</p>
+          </div>
+          <div class="card">
+            <h3>Plan Semestral</h3>
+            <ul>
+              <li>Acceso completo a todos los recursos y webinars.</li>
+              <li>Acceso a 5 diplomados.</li>
+              <li>Acceso a 6 chats con RH.</li>
+            </ul>
+            <p>Precio: $50/6 meses</p>
+          </div>
+          <div class="card">
+            <h3>Plan Anual</h3>
+            <ul>
+              <li>Acceso completo a todos los recursos y webinars.</li>
+              <li>Acceso a 5 diplomados.</li>
+              <li>Acceso ilimitado a chats con RH.</li>
+            </ul>
+            <p>Precio: $90/año</p>
+          </div>
+        </div>
+        <div class="centra_boton">
+          <button onclick="window.open('https://example.com/subscribe', '_blank')">Suscríbete Ahora</button>
+        </div>
+      </section>
+
       
 
       <section id="faqs">
@@ -454,8 +542,11 @@
         <div class="centra_boton">
           <button>Ver Más</button>
         </div>
+
+
         
       </section>
+
 
       <section id="program-description">
         <h2>¿Cómo participar?</h2>
